@@ -10,7 +10,7 @@ Student::Student()
 
 Student::Student(Student& st)
 {
-	if (st.head == nullptr)
+	if (st.head == nullptr) 
 	{
 		head = nullptr;
 		cout << "Вызван конструктор копирования класса Student" << endl;
@@ -67,7 +67,7 @@ void Student::SetData()
 	int crs;
 	float avSc;
 
-	cout << "Введите имя студента: ";
+	cout << "Введите ФИО студента: ";
 	cin >> fn;
 
 	cout << "Введите группу студента: ";
@@ -128,8 +128,6 @@ void Student::GetData()
 
 void Student::EditData()
 {
-	setlocale(LC_ALL, "Rus");
-
 	string fn;
 	int grp;
 	string sp;
@@ -182,24 +180,24 @@ void Student::EditData()
 
 Student& Student::operator=(const Student& st)
 {
-	if (this == &st)
+	if (this == &st) 
 	{
 		return *this;
 	}
 
 	Node* current = head;
-	while (current != nullptr)
+	while (current != nullptr) 
 	{
 		Node* toDelete = current;
 		current = current->pNext;
 		delete toDelete;
 	}
 
-	if (st.head == nullptr)
+	if (st.head == nullptr) 
 	{
 		head = nullptr;
 	}
-	else
+	else 
 	{
 		current = st.head;
 		head = new Node();
@@ -212,7 +210,7 @@ Student& Student::operator=(const Student& st)
 		Node* newNode = head;
 		current = current->pNext;
 
-		while (current != nullptr)
+		while (current != nullptr) 
 		{
 			newNode->pNext = new Node();
 			newNode = newNode->pNext;

@@ -13,12 +13,12 @@ private:
 
 		Node(Node* pNext = nullptr, string fullname = "", int groups[num] = nullptr, string subjects[num] = nullptr)
 		{
-			for (int i = 0; i < num; ++i)
+			for (int i = 0; i < num; ++i) 
 			{
 				this->groups[i] = 0;
 			}
 
-			for (int i = 0; i < num; ++i)
+			for (int i = 0; i < num; ++i) 
 			{
 				this->subjects[i] = "";
 			}

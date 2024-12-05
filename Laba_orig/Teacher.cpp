@@ -232,7 +232,7 @@ void Teacher::SetData()
 		subs[i] = "";
 	}
 
-	cout << "Введите имя преподавателя: ";
+	cout << "Введите ФИО преподавателя: ";
 	cin >> fn;
 
 	cout << "Введите количество групп преподавателя: ";
@@ -350,7 +350,7 @@ void Teacher::DeleteData()
 			break;
 		}
 		counter++;
-
+		
 		if (counter == n)
 		{
 			current->pNext = temp->pNext;

@@ -17,6 +17,6 @@ public:
 	virtual void SetData() = 0;
 	virtual void DeleteData() = 0;
 	virtual void EditData() = 0;
-
+	
 };
 #endif UNIVERSITY_H

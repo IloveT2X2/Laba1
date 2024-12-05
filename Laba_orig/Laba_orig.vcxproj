@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{52bbba33-9885-4ddc-bf11-97d2fff4f287}</ProjectGuid>
-    <RootNamespace>Labaorig</RootNamespace>
+    <ProjectGuid>{100d863f-48b9-43f0-be0e-803c3ad7e3da}</ProjectGuid>
+    <RootNamespace>LabaOne</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Admin.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Teacher.h" />
     <ClInclude Include="University.h" />

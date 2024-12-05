@@ -29,7 +29,7 @@ private:
 public:
 	Student();
 	Student(Student& st);
-	~Student();
+	~Student(); 
 
 	void GetData() override;
 	void SetData() override;
